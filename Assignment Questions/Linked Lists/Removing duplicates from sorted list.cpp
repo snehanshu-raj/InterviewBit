@@ -11,6 +11,7 @@ ListNode* Solution::deleteDuplicates(ListNode* a) {
     
     if(p -> next == NULL)
         return a;
+        
     while(1)
     {
         if(p -> next -> val == p -> val)
