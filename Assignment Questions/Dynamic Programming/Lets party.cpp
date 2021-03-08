@@ -5,7 +5,7 @@ int ways(int n)
     if(n <= 2 || dp[n] != 0)
         return dp[n] % 10003;
     
-    dp[n] = (ways(n - 1) + ways(n - 2) * (n - 1))y % 10003;
+    dp[n] = (ways(n - 1) + ways(n - 2) * (n - 1)) % 10003;
     return dp[n] % 10003;
 }
 
