@@ -15,5 +15,4 @@ int Solution::solve(int w, vector<int> &v, vector<int> &wt) {
     }
     
     return dp[w];
-    
 }
