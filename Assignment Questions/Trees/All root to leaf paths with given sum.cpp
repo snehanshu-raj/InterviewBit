@@ -7,7 +7,8 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-void sum_path(TreeNode* a, vector <vector <int> > &ans, int sum, vector <int> &v)
+
+void sum_path(TreeNode* a, vector <vector <int> > &ans, int sum, vector <int> &v) 
 {
     // if(sum == 0 && a -> left == NULL && a -> right == NULL)
     // {
