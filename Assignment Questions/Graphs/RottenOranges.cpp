@@ -6,8 +6,10 @@ int Solution::solve(vector <vector <int> > &a) {
     
     int fresh = 0, count = 0;
     
-    for(int i = 0; i < rows; i++) {
-        for(int j = 0; j < cols; j++) {
+    for(int i = 0; i < rows; i++) 
+    {
+        for(int j = 0; j < cols; j++) 
+        {
             if(a[i][j] == 2)
                 q.push({i, j});
             else if(a[i][j])
@@ -18,8 +20,8 @@ int Solution::solve(vector <vector <int> > &a) {
     if(fresh == 0)
         return 0;
     
-    while(!q.empty()) {
-        
+    while(!q.empty()) 
+    {        
         int n = q.size();
         
         while(n--) 
@@ -63,6 +65,7 @@ int Solution::solve(vector <vector <int> > &a) {
         
         count++;
     }
+    
     return fresh > 0 ? -1 : count - 1;
 }
 
