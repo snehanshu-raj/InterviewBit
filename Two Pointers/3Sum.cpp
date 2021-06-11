@@ -6,7 +6,7 @@ int Solution::threeSumClosest(vector<int> &a, int b) {
     
     while(i < a.size() - 2)
     {
-        int left = i  + 1, right = a.size() - 1;
+        int left = i + 1, right = a.size() - 1;
         
         while(left < right)
         {
