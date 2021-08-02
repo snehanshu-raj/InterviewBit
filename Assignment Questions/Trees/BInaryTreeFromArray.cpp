@@ -7,6 +7,7 @@ struct node
 
 node* construct(int a[], int i, int n, Node* root)
 {
+
     if(i < n)
     {
         Node *temp = new node(a[i]);
@@ -18,4 +19,5 @@ node* construct(int a[], int i, int n, Node* root)
     }
 
     return root;
+    
 }
